@@ -12,19 +12,19 @@
                 var notes = $("textarea#Notes").val();
 
                 $.ajax({
-                    url: "https://docs.google.com/forms/d/1VE-LA4e3cZFmsEmFnfIAluluLpfAGi9TTMSMbmF6n9Y/formResponse",
+                    url: "https://docs.google.com/a/nycaudubon.org/forms/d/1Q_Ehp0IecrwgQIugde1IPVZwS-ySzL3vp2DVTYGFifM/formResponse",
                     data: {
-                        "entry.877261230": species,
-                        "entry.642129870": dead_or_injured,
-                        "entry.1812955822": sex,
-                        "entry.347479321": age,
-                        "entry.885031573": date,
-                        "entry.1258116242": time,
-                        "entry.484942320": your_name,
-                        "entry.123994772": contact_info,
-                        "entry.514353857": lati,
-                        "entry.850967541": longi,
-                        "entry.1523226474": notes
+                        "entry.21279752": species,
+                        "entry.1760098207": dead_or_injured,
+                        "entry.1162522983": sex,
+                        "entry.968826813": age,
+                        "entry.1089406598": date,
+                        "entry.1322686028": time,
+                        "entry.1322686028": your_name,
+                        "entry.1267380138": contact_info,
+                        "entry.563161073": lati,
+                        "entry.195156901": longi,
+                        "entry.389816901": notes
                         },
                     type: "POST",
                     dataType: "xml",

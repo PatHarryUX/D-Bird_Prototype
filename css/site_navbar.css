@@ -1,0 +1,107 @@
+/* Nav Styling*/
+
+.top-bar {
+	background: rgba(255,255,255,1.0);
+	height: 85px;
+	border-bottom: 1px solid rgba(140,140,140,1.0);
+	padding-top: 10px;
+}
+
+.nav-container {
+	background: rgba(255,255,255,1.0);
+	height: 85px;
+	border-bottom: 1px solid rgba(140,140,140,1.0);
+}
+
+
+
+.main-mobile-content {
+	background: white;
+}
+
+
+
+
+
+
+.name.show-for-small-only h1 a {
+	font-size: 1.5em;
+	font-weight: 700;
+	color: rgba(100,100,100,1.0);
+}
+.show-for-small-only .powered-by {
+	position: relative;
+	top: -45%;
+	z-index: 2;
+	background: transparent;
+	padding-left: 16px;
+}
+.show-for-small-only.name .powered-by span {
+	font-size: .455em;
+	font-weight: 700;
+}
+.show-for-small-only .powered-by a {
+	font-size: .7em;
+	font-weight: 400;
+	color: rgba(51,51,51,1.0);
+	text-decoration: underline;
+}
+
+
+
+
+
+.name.show-for-medium-up h1 a {
+	font-size: 2.275em;
+	font-weight: 700;
+	color: rgba(100,100,100,1.0);
+}
+.show-for-medium-up .powered-by {
+	position: relative;
+	top: -35%;
+	z-index: 2;
+	background: transparent;
+	padding-left: 16px;
+}
+.show-for-medium-up .top-bar .name .powered-by span {
+	font-size: .795em;
+	font-weight: 400;
+}
+.show-for-medium-up .powered-by a {
+	font-size: .795em;
+	font-weight: 400;
+	color: rgba(51,51,51,1.0);
+	text-decoration: underline;
+}
+
+
+.tab-bar-section {
+	margin-top: 10px;
+}
+
+.tab-bar-section a{
+	float: right;
+	padding-right: 5px;
+}
+
+
+.phone-style {
+	padding-top: 7px;
+	font-size: .8em;
+	font-weight: 700;
+	color: rgba(100,100,100,1.0);
+}
+
+
+.phone-style > i {
+	position: relative;
+	font-size: 1.5em;
+	top: 3px;
+	color: rgba(100,100,100,1.0);
+}
+
+
+
+
+
+

@@ -1,0 +1,423 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0' >
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="http://d-bird.org/nyca%20fav%20icon.ico">
+    <title>D-Bird</title>
+
+    <!-- CSS FOR THE MAP -->
+    
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="http://smeijer.github.io/GeoSearch/css/l.geosearch.css" />
+
+    <!-- D-BIRD UI -->
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/site_navbar.css" />
+    <link rel="stylesheet" href="css/map_popup.css" />
+    <link rel="stylesheet" href="css/radio.buttons.css" />
+
+    <!-- CSS FOR DATE & TIME PICKERS-->
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+
+  </head>
+  <body>
+    
+
+
+<div class="contain-to-grid nav-container">
+  <nav class="top-bar" data-topbar role="navigation">
+
+    <ul class="title-area">
+      <li class="name show-for-small-only">
+        <h1><a href="#">D-Bird.org</a></h1>
+        <div class="powered-by">
+          <span>Powered by: </span><a href="http://www.nycaudubon.org/"> NYC AUDUBON</a>
+        </div>
+      </li>
+    </ul>
+
+
+    <ul class="title-area">
+      <li class="name show-for-medium-up">
+        <h1><a href="#">D-Bird.org</a></h1>
+        <div class="powered-by">
+          <span>Powered by: </span><a href="http://www.nycaudubon.org/"> NYC AUDUBON</a>
+        </div>
+      </li>
+    </ul>
+
+
+    <section class="right tab-bar-section">
+      <a href="tel://1-555-555-5555" class="show-for-small-only phone-style"><i class="fi-telephone"></i> (212) 691-7483</a>
+      <a href="tel://1-555-555-5555" class="show-for-medium-up phone-style disabled_link" disabled><i class="fi-telephone"></i> (212) 691-7483</a>
+    </section>
+  </nav>
+</div>
+
+
+
+
+
+
+
+<div class="row" id="hero">
+  <div class="small-12 medium-6 large-6 columns">
+
+    <img src="img/nyca_logo.jpg"/>
+  </div>
+
+  <div class="small-12 medium-6 large-6 columns info">
+
+
+          <div style="padding: 0px 20px 0px 20px;">
+
+            <p style="text-align:justify;"><strong style="color:rgba(100,100,100,1.0);">If you find a dead or injured bird, you can make an important contribution to <a href="http://www.nycaudubon.org/project-safe-flight">Project Safe Flight </a> by submitting the information through a D-Bird report.</strong></p>
+    
+          </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div id="mainDReport">
+
+
+
+
+
+
+
+
+
+<br/>
+
+
+
+
+
+
+  <form id="hello" action="http://rillyrillyapps.com/D-Bird_Prototype/thank_you.html"></form>
+
+
+      <div class="row" style="text-align:center;">
+        <h2>D-BIRD REPORT</h2>
+      </div>
+      <br/>
+      <div class="row">
+        <span style="font-weight:bold;color:rgba(170,170,170,1.0);margin-left:20px;"><i>* indicates required field</i></span>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-6 large-6 columns">
+          <div class="panel">
+            <h4>1. About the Bird</h4>
+              <fieldset form="hello">
+                <label for="species">Species *
+                  <select form="hello" id="species" required>
+                    <option value=""><span style="font-weight:bold;">Select Species</span></option>
+                    <option value="unknown">unknown</option> <option value="other (describe in &#39;Notes&#39;)">other (describe in &#39;Notes&#39;)</option> <option value="flycatcher sp.">flycatcher sp.</option> <option value="gull sp.">gull sp.</option> <option value="kinglet sp.">kinglet sp.</option> <option value="owl sp.">owl sp.</option> <option value="sparrow sp.">sparrow sp.</option> <option value="thrush sp.">thrush sp.</option> <option value="warbler sp.">warbler sp.</option> <option value="woodpecker sp.">woodpecker sp.</option> <option value="wren sp.">wren sp.</option> <option value="Alder Flycatcher">Alder Flycatcher</option> <option value="American Black Duck">American Black Duck</option> <option value="American Coot">American Coot</option> <option value="American Goldfinch">American Goldfinch</option> <option value="American Kestrel">American Kestrel</option> <option value="American Redstart">American Redstart</option> <option value="American Robin">American Robin</option> <option value="American Woodcock">American Woodcock</option> <option value="Baltimore Oriole">Baltimore Oriole</option> <option value="Barn Swallow">Barn Swallow</option> <option value="Bay-Breasted Warbler">Bay-Breasted Warbler</option> <option value="Belted Kingfisher">Belted Kingfisher</option> <option value="Black-and-white Warbler">Black-and-white Warbler</option> <option value="Black-billed Cuckoo">Black-billed Cuckoo</option> <option value="Black-capped Chickadee">Black-capped Chickadee</option> <option value="Blackpoll Warbler">Blackpoll Warbler</option> <option value="Black-throated Blue Warbler">Black-throated Blue Warbler</option> <option value="Black-throated Green Warbler">Black-throated Green Warbler</option> <option value="Blue Jay">Blue Jay</option> <option value="Blue-headed Vireo">Blue-headed Vireo</option> <option value="Blue-winged Warbler">Blue-winged Warbler</option> <option value="Brown Creeper">Brown Creeper</option> <option value="Brown Thrasher">Brown Thrasher</option> <option value="Brown-headed Cowbird">Brown-headed Cowbird</option> <option value="Canada Warbler">Canada Warbler</option> <option value="Cape May Warbler">Cape May Warbler</option> <option value="Cedar Waxwing">Cedar Waxwing</option> <option value="Chestnut-sided Warbler">Chestnut-sided Warbler</option> <option value="Chipping Sparrow">Chipping Sparrow</option> <option value="Chuck-will&#39;s-widow">Chuck-will&#39;s-widow</option> <option value="Clapper Rail">Clapper Rail</option> <option value="Common Grackle">Common Grackle</option> <option value="Common Yellowthroat">Common Yellowthroat</option> <option value="Connecticut Warbler">Connecticut Warbler</option> <option value="Dark-eyed Junco">Dark-eyed Junco</option> <option value="Downy Woodpecker">Downy Woodpecker</option> <option value="Eastern Bluebird">Eastern Bluebird</option> <option value="Eastern Kingbird">Eastern Kingbird</option> <option value="Eastern Phoebe">Eastern Phoebe</option> <option value="Eastern Towhee">Eastern Towhee</option> <option value="Eastern Wood-pewee">Eastern Wood-pewee</option> <option value="European Starling">European Starling</option> <option value="Field Sparrow">Field Sparrow</option> <option value="Fox Sparrow">Fox Sparrow</option> <option value="Golden-crowned Kinglet">Golden-crowned Kinglet</option> <option value="Gray Catbird">Gray Catbird</option> <option value="Gray-cheeked Thrush">Gray-cheeked Thrush</option> <option value="Great Crested Flycatcher">Great Crested Flycatcher</option> <option value="Hermit Thrush">Hermit Thrush</option> <option value="Hooded Warbler">Hooded Warbler</option> <option value="House Finch">House Finch</option> <option value="House Sparrow">House Sparrow</option> <option value="House Wren">House Wren</option> <option value="Indigo Bunting">Indigo Bunting</option> <option value="Kentucky Warbler">Kentucky Warbler</option> <option value="Lazuli Bunting">Lazuli Bunting</option> <option value="Least Flycatcher">Least Flycatcher</option> <option value="Lincoln&#39;s Sparrow">Lincoln&#39;s Sparrow</option> <option value="Louisiana Waterthrush">Louisiana Waterthrush</option> <option value="Magnolia Warbler">Magnolia Warbler</option> <option value="Marsh Wren">Marsh Wren</option> <option value="Mourning Dove">Mourning Dove</option> <option value="Mourning Warbler">Mourning Warbler</option> <option value="Northern Cardinal">Northern Cardinal</option> <option value="Northern Flicker">Northern Flicker</option> <option value="Northern Mockingbird">Northern Mockingbird</option> <option value="Northern Parula">Northern Parula</option> <option value="Northern Waterthrush">Northern Waterthrush</option> <option value="Olive-sided Flycatcher">Olive-sided Flycatcher</option> <option value="Orchard Oriole">Orchard Oriole</option> <option value="Osprey">Osprey</option> <option value="Ovenbird">Ovenbird</option> <option value="Palm Warbler">Palm Warbler</option> <option value="Peregrine Falcon">Peregrine Falcon</option> <option value="Pine Warbler">Pine Warbler</option> <option value="Prairie Warbler">Prairie Warbler</option> <option value="Prothonotary Warbler">Prothonotary Warbler</option> <option value="Purple Finch">Purple Finch</option> <option value="Red-headed Woodpecker">Red-headed Woodpecker</option> <option value="Red-bellied Woodpecker">Red-bellied Woodpecker</option> <option value="Red-breasted Nuthatch">Red-breasted Nuthatch</option> <option value="Red-eyed Vireo">Red-eyed Vireo</option> <option value="Red-tailed Hawk">Red-tailed Hawk</option> <option value="Rock Pigeon">Rock Pigeon</option> <option value="Rose-breasted Grosbeak">Rose-breasted Grosbeak</option> <option value="Ruby-crowned Kinglet">Ruby-crowned Kinglet</option> <option value="Ruby-throated Hummingbird">Ruby-throated Hummingbird</option> <option value="Savannah Sparrow">Savannah Sparrow</option> <option value="Scarlet Tanager">Scarlet Tanager</option> <option value="Seaside Sparrow">Seaside Sparrow</option> <option value="Song Sparrow">Song Sparrow</option> <option value="Sora">Sora</option> <option value="Swainson&#39;s Thrush">Swainson&#39;s Thrush</option> <option value="Swamp Sparrow">Swamp Sparrow</option> <option value="Tennessee Warbler">Tennessee Warbler</option> <option value="Tufted Titmouse">Tufted Titmouse</option> <option value="Veery">Veery</option> <option value="Virginia Rail">Virginia Rail</option> <option value="White-breasted Nuthatch">White-breasted Nuthatch</option> <option value="White-crowned Sparrow">White-crowned Sparrow</option> <option value="White-eyed Vireo">White-eyed Vireo</option> <option value="White-throated Sparrow">White-throated Sparrow</option> <option value="Willow Flycatcher">Willow Flycatcher</option> <option value="Wilson&#39;s Warbler">Wilson&#39;s Warbler</option> <option value="Winter Wren">Winter Wren</option> <option value="Wood Thrush">Wood Thrush</option> <option value="Worm-eating Warbler">Worm-eating Warbler</option> <option value="Yellow Warbler">Yellow Warbler</option> <option value="Yellow-bellied Flycatcher">Yellow-bellied Flycatcher</option> <option value="Yellow-bellied Sapsucker">Yellow-bellied Sapsucker</option> <option value="Yellow-billed Cuckoo">Yellow-billed Cuckoo</option> <option value="Yellow-breasted Chat">Yellow-breasted Chat</option> <option value="Yellow-rumped Warbler">Yellow-rumped Warbler</option> <option value="Yellow-throated Vireo">Yellow-throated Vireo</option>
+                  </select>
+                </label>
+              </fieldset>
+            <div class="row collapse foundation-radio-button-row">
+              <fieldset form="hello" class="radios" data-role="controlgroup" data-type="horizontal">
+                <legend>Dead or Injured? *</legend>
+                <div class="small-6 medium-6 large-6 columns foundation-radio-button">
+                  <input form="hello" type="radio" class="button expand first_radio" name="dead_or_injured" id="input_dead" value="injured" checked="checked" required/>
+                  <label for="input_dead">Dead</label>
+                </div>
+                <div class="small-6 medium-6 large-6 columns foundation-radio-button">
+                  <input form="hello" type="radio"  class="button expand" name="dead_or_injured" id="injured" value="injured" required/>
+                  <label for="injured">Injured</label>
+                </div>
+              </fieldset>
+            </div>
+          <div class="row collapse foundation-radio-button-row">
+            <fieldset  form="hello" class="radios" data-role="controlgroup" data-type="horizontal">
+              <legend>Sex</legend> 
+              <div class="small-4 medium-4 large-4 columns foundation-radio-button">
+                <input form="hello" type="radio" class="button expand first_radio" name="sex" id="sex_unknown" value="unknown" checked="checked" />
+                <label for="sex_unknown">Unknown</label>
+              </div>
+              <div class="small-4 medium-4 large-4 columns foundation-radio-button">
+                <input form="hello" type="radio" class="button expand" name="sex" id="sex_female" value="female" />
+                <label for="sex_female">Female</label>
+              </div>
+              <div class="small-4 medium-4 large-4 columns foundation-radio-button">
+                <input form="hello" type="radio" class="button expand" name="sex" id="sex_male" value="male"  />
+                <label for="sex_male">Male</label> 
+              </div>
+            </fieldset>
+          </div>
+
+
+          <div class="row collapse foundation-radio-button-row">
+            <fieldset  form="hello" class="radios" data-role="controlgroup" data-type="horizontal">
+              <legend>Age</legend>
+
+                <div class="small-4 medium-4 large-4 columns foundation-radio-button">
+                  <input form="hello" type="radio" class="button expand first_radio" name="age" id="age_unknown" value="unknown" checked="checked" />
+                  <label for="age_unknown">Unknown</label>
+                </div>
+
+                <div class="small-4 medium-4 large-4 columns foundation-radio-button">
+                  <input form="hello" type="radio" class="button expand" name="age" id="age_adult" value="adult"  />
+                  <label for="age_adult">Adult</label>
+                </div>
+                <div class="small-4 medium-4 large-4 columns foundation-radio-button">
+                  <input form="hello" type="radio" class="button expand" name="age" id="age_juvenile" value="juvenile"  />
+                  <label for="age_juvenile">Juvenile</label>
+                </div>
+              </fieldset>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-6 columns">
+          <div class="panel">
+            <h4>2. The Details</h4>
+              <fieldset  form="hello">
+                <label for="Date">Date bird was found *
+                  <input form="hello" type="text" data-role="date" id="Date" required/>
+                </label>
+                <label for="Time">Time bird was found *
+                  <input form="hello" type="text" id="Time" required />
+                </label>
+                <label for="Your_Name">Your Name
+                  <input form="hello" type="text" id="Your_Name"/>
+                </label>
+                <label for="Contact_Info">Your Contact Info
+                  <input form="hello" type="text" id="Contact_Info"/>
+                </label>
+              </fieldset>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
+          <div class="panel">
+            <h4  style="display:inline;">3. Select Location *</h4>
+            <br />
+            <br />
+
+
+
+
+                 <div id="mobileLocation" class="show-for-small-only">
+                  <h3 style="display:inlne-block">Current Location Selected</h3>
+                  <br/>
+                 </div>
+
+
+
+                <fieldset  form="hello">
+                    <input form="hello" type="text" id="Lati" value="" style="display:none;"/>
+                    <input form="hello" type="text" id="Longi" value="" style="display:none;"/>
+                </fieldset>
+
+
+
+          <div class="show-for-small-only">
+            <button class="button expand" onclick="getLocation()">Use Current Location</button>
+          </div>
+
+
+          <div class="show-for-medium-up" id="map"></div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+        <div class="row">
+          <div class="small-12 medium-8 large-8 columns">
+            <div class="panel">
+              <h4>4. Additional Observations</h4>
+              <fieldset  form="hello">
+                <label for="Notes">Notes
+                  <textarea form="hello" placeholder="" class="notes" id="Notes"></textarea>
+                </label>
+              </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="small-12 medium-4 large-4 columns">
+              <fieldset  form="hello">
+                <input form="hello" type="submit" name="submit" id="submit" value="submit" class="button expand" />
+              </fieldset>
+          </div>
+        </div>
+
+
+</div>
+
+
+
+    <div class="footer">
+      <div class="row">
+        Footer
+      </div>
+    </div>
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script src="js/l.control.geosearch.js"></script>
+    <script src="js/l.geosearch.provider.google.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
+    <script src="js/d-bird/image.upload.js"></script>
+    <script src="js/d-bird/dbird.ajax.test.2.0.js"></script>
+    <script src="js/d-bird/dbird.initializations.js"></script>
+    <script src="js/d-bird/mobileLocationButton.js"></script>
+    
+<script>
+
+
+  var x = document.getElementById();
+
+  function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+  }                             
+//  function showPosition(position) {
+//        document.getElementById("Lati").value=position.coords.latitude;
+//        document.getElementById("Longi").value=position.coords.longitude;
+//        }   
+
+  function showPosition(position) {
+        $("#Longi").val(position.coords.longitude);
+        $("#mobileLocation").addClass("visible");
+        $('#Lati').val(position.coords.latitude);
+        }   
+
+
+   
+
+
+
+
+
+
+
+
+
+</script>
+    <script>
+
+    //THIS IS THE JAVASCRIPT FOR THE INTERACTIVE MAP
+       var map;
+        
+        var marker;
+        
+        var geosearchControl;
+
+            $(document).ready(function () {
+                
+                map = L.map('map', {touchZoom: false}).setView([40.709792, -73.991547], 10);
+ 
+                geosearchControl = new L.Control.GeoSearch({
+                    provider: new L.GeoSearch.Provider.Google()
+                }).addTo(map);
+                
+                map.on('geosearch_showlocation', function(e) {
+                    console.log(e.Location.X)
+                    if (marker){
+                        map.removeLayer(marker)
+                        marker=undefined
+                        }
+                    $('#Lati').val(e.Location.Y); 
+
+                $('#Longi').val(e.Location.X);
+                });
+                
+                               
+                L.tileLayer('https://{s}.tiles.mapbox.com/v3/ebrelsford.ho06j5h0/{z}/{x}/{y}.png', {
+                    maxZoom: 18,
+                    attribution: '<div style="display:inline;>Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://mapbox.com">Mapbox</a><div>'
+                }).addTo(map);
+             
+                $.getJSON('queens.geojson', function (data) {
+                    L.geoJson(data, {
+                        onEachFeature: function (feature, layer) {
+                            layer.bindPopup('area: ' + feature.properties.area);
+                        }
+                    }).addTo(map);
+                });
+         
+                
+                
+        function onMapClick(e) {
+                    if(geosearchControl._positionMarker){
+                        map.removeLayer(geosearchControl._positionMarker)
+                        geosearchControl._positionMarker=undefined
+                    }
+                    if (marker){
+                        map.removeLayer(marker);
+                    }
+                    marker=L.marker(e.latlng).addTo(map)
+
+                //    .bindPopup("<b>Latitude: </b><span id='popup_Lati'></span><br /><b>Longitude: </b><span id='popup_Longi'></span>").openPopup();
+                
+            $('#Lati').val(e.latlng.lat);
+            $('#Longi').val(e.latlng.lng);
+            $('#popup_Lati').html(" " + e.latlng.lat);
+            $('#popup_Longi').html(" " + e.latlng.lng);
+            } 
+
+          map.on('click', onMapClick);        
+            });
+
+    </script>
+  </body>
+</html>
